@@ -1,0 +1,46 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"mobileApiTest\"><param name=\"ios-package\" value=\"mobileApiTest\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.sumscope.mobile.mobileTestDemo"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "org.sumscope.mobile.mobileTestDemo"
+        },
+        "org.sumscope.mobile.apitest": {
+            "PACKAGE_NAME": "org.sumscope.mobile.mobileTestDemo"
+        }
+    },
+    "dependent_plugins": {}
+}

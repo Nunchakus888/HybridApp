@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="org.sumscope.mobile.apitest" version="0.0.1" 
+        xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>mobileApiTest</name>
+    <description>Description</description>
+    <js-module name="mobileApiTest" src="www/mobileApiTest.js">
+        <clobbers target="cordova.plugins.mobileApiTest"/>
+    </js-module>
+      <platform name="ios">
+	<config-file parent="/*" target="config.xml">
+            <feature name="mobileApiTest">
+                <param name="ios-package" value="mobileApiTest" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/mobileApiTest.h" />
+        <source-file src="src/ios/mobileApiTest.m" />
+    </platform>
+</plugin>
